@@ -1,3 +1,3 @@
-# goit-markup-hw-02
-# https://filipoo1996.github.io/goit-markup-hw-02/
+# goit-markup-hw-03
+#https://github.com/Filipoo1996/goit-markup-hw-03
  
