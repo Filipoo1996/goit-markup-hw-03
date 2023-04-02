@@ -56,7 +56,7 @@ body {
 
 }
 
-.navigation-link {
+.nav-menu {
 
     font-weight: 500;
     font-size: 14px;
@@ -149,7 +149,7 @@ body {
     cursor: pointer;
 }
 
-.box>h1 {
+.box > h1 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -163,7 +163,7 @@ body {
 
 }
 
-.text>h3 {
+.text > h3 {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -172,7 +172,7 @@ body {
     color: var(--text-color-black);
 }
 
-.text>p {
+.text > p {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -180,7 +180,7 @@ body {
     color: var(--text-color-grey);
 }
 
-.about>h2 {
+.job-head > h2 {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -210,7 +210,7 @@ body {
     color: var(--text-color-grey);
 }
 
-.adress>p {
+.adress > p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -244,12 +244,28 @@ body {
 
     color: var(--text-color-black);
 }
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+.item h3 {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        
+    
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: var(--text-color-black);
 }
+.item p {
+    font-size: 16px;
+        line-height: 1.18;
+        
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: var(--text-color-grey);
+        padding-top: 10px;
+}
+
 
 * {
     padding: 0;
@@ -323,6 +339,9 @@ a {
     padding-top: 94px;
     gap: 30px;
     background-color: var(--background-page-colo);
+}
+.text h3 {
+    padding-bottom: 10px;
 }
 
 .job-head {
