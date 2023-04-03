@@ -126,7 +126,6 @@ body {
 
 .box {
     background-color: var(--footer-background-color);
-    color: var(--text-color-white);
     min-height: 600px;
 }
 
@@ -149,7 +148,7 @@ body {
     cursor: pointer;
 }
 
-.box > h1 {
+.box  h1 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -163,7 +162,7 @@ body {
 
 }
 
-.text > h3 {
+.text  h3 {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -172,7 +171,7 @@ body {
     color: var(--text-color-black);
 }
 
-.text > p {
+.text  p {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -188,6 +187,9 @@ body {
 
 
     color: var(--text-color-black);
+}
+.people-section{
+    background-color: var(--buttons-background);
 }
 
 .item h3 {
@@ -209,6 +211,7 @@ body {
 
     color: var(--text-color-grey);
 }
+
 
 .adress > p {
     font-weight: 400;
@@ -303,17 +306,16 @@ a {
 .main-container {
     display: flex;
     align-items: center;
-    flex-direction: column-reverse;
-    gap: 30px
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .main-text {
     width: 696px;
-    height: 120px;
     margin-left: 452px;
     margin-right: 452px;
     padding-top: 120px;
-    padding-bottom: 30px;
     text-transform: uppercase;
     text-align: center;
 
@@ -326,9 +328,9 @@ a {
     height: 50px;
     border-radius: 4px;
     display: block;
-    margin-top: 30px;
     justify-content: center;
-    top: 350px;
+    margin-top: 350px;
+
 }
 
 .text {
@@ -352,10 +354,6 @@ a {
     gap: 30px
 }
 
-.team-container {
-    height: 648px;
-}
-
 .team-container h3 {
     padding-top: 30px;
 }
@@ -366,14 +364,20 @@ a {
 
 .card-set {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
     background: var(--header-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    gap: 30px;
+    flex-basis: calc((100%-px)/4);
+    
     
 
+}
+.job-section {
+    background-color: var(--background-page-color);
 }
 
 .item {
@@ -402,7 +406,8 @@ a {
 }
 
 .footer-list {
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
     padding-top: 20px;
     justify-content: center;
     gap: 9px;
@@ -413,9 +418,12 @@ a {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-left: 370px;
     
-
+    
+}
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 .button {
