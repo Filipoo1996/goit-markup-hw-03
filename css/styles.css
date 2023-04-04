@@ -1,5 +1,5 @@
 :root {
-    --background-page-color: #E5E5E5;
+    --background-page-color: #FFFFFF;
     --header-background-color: #FFFFFF;
     --footer-background-color: #2F303A;
     --text-color-black: #212121;
@@ -17,6 +17,7 @@ body {
 
 .header {
     background-color: var(--header-background-color);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .menu-logo-top {
@@ -129,37 +130,9 @@ body {
     min-height: 600px;
 }
 
-.main-button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    position: absolute;
-
-    color: var(--text-color-white);
-    background-color: var(--text-color-blue);
-}
-
 .button-main:hover,
 .button-main:focus {
     cursor: pointer;
-}
-
-.box  h1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    font-style: extra-expanded;
-
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    color: var(--text-color-white);
-
 }
 
 .text  h3 {
@@ -273,6 +246,10 @@ body {
     padding: 0;
     margin: 0;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .container {
     width: 100%;
@@ -290,7 +267,7 @@ ul {
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
+
 }
 
 a {
@@ -312,27 +289,31 @@ a {
 }
 
 .main-text {
-    width: 696px;
-    margin-left: 452px;
-    margin-right: 452px;
-    padding-top: 120px;
-    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
     text-align: center;
-
-
-
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+    max-width: 696px;
+    margin: 0 auto;
 }
 
 .main-button {
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
     display: block;
-    justify-content: center;
-    margin-top: 350px;
-
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--text-color-white);
+    background-color: var(--text-color-blue);
+    padding: 10px 42px 10px 42px;
+    margin: 30px auto 0 auto;
 }
-
+.box.section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 .text {
     display: flex;
     list-style-type: none;
@@ -341,6 +322,9 @@ a {
 }
 .text h3 {
     padding-bottom: 10px;
+}
+.text-container{
+    padding-bottom: 0px;
 }
 
 .job-head {
@@ -364,14 +348,14 @@ a {
 
 .card-set {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     list-style: none;
-    background: var(--header-background-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--background-page-color);
+    box-shadow: 0px 2px 1px 0px #00000033; box-shadow: 0px 1px 1px 0px #00000024; box-shadow: 0px 1px 3px 0px #0000001F;
     border-radius: 0px 0px 4px 4px;
-    text-align: center;
+    align-items:  center;
     gap: 30px;
-    flex-basis: calc((100%-px)/4);
+    
     
     
 
@@ -380,8 +364,10 @@ a {
     background-color: var(--background-page-color);
 }
 
+
+
 .item {
-    flex-basis: calc((100%-20px)/4);
+    flex-basis: calc((100%-30px)/4);
     padding: 10px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -420,10 +406,15 @@ a {
     gap: 8px;
     
     
+    
+    
 }
 .button-container {
     display: flex;
     justify-content: center;
+    
+
+    
 }
 
 .button {
@@ -438,9 +429,11 @@ a {
     flex-wrap: wrap;
     gap: 30px;
     list-style: none;
-    background-color: var(--header-background-color);
-    text-align: center;
+    background-color: var(--background-page-color);
+    text-align: left;
     flex-basis: calc((100%-20px)/9);
+    align-items: center;
+    
     
 
 }
@@ -454,12 +447,10 @@ a {
 .project-list h3 {
     padding-top: 20px;
     gap: 4px;
+    margin-left: 24px;
 }
 
 .project-list p {
     padding-bottom: 20px;
-}
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin-left: 24px;
 }
