@@ -195,7 +195,7 @@ body {
     color: var(--text-color-white);
 }
 
-.projects h3 {
+.project-item h3 {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -203,7 +203,7 @@ body {
     color: var(--text-color-black);
 }
 
-.projects p {
+.project-item {
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
@@ -338,11 +338,11 @@ a {
     gap: 30px
 }
 
-.team-container h3 {
+.card-set h3 {
     padding-top: 30px;
 }
 
-.team-container p {
+.card-set p {
     padding-bottom: 30px;
 }
 
@@ -350,8 +350,6 @@ a {
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
-    background-color: var(--background-page-color);
-    box-shadow: 0px 2px 1px 0px #00000033; box-shadow: 0px 1px 1px 0px #00000024; box-shadow: 0px 1px 3px 0px #0000001F;
     border-radius: 0px 0px 4px 4px;
     align-items:  center;
     gap: 30px;
@@ -368,9 +366,9 @@ a {
 
 .item {
     flex-basis: calc((100%-30px)/4);
-    padding: 10px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--background-page-color);
 }
 
 .item h2 {
@@ -412,6 +410,8 @@ a {
 .button-container {
     display: flex;
     justify-content: center;
+    padding-top: 94px;
+   
     
 
     
@@ -453,4 +453,14 @@ a {
 .project-list p {
     padding-bottom: 20px;
     margin-left: 24px;
+}
+.job-section{
+    padding-top: 0;
+}
+.project-container{
+    padding-top: 0;
+}
+.projects-section{
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
