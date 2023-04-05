@@ -152,7 +152,7 @@ body {
     color: var(--text-color-grey);
 }
 
-.job-head > h2 {
+.job-head  {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -239,7 +239,7 @@ body {
         letter-spacing: 0.03em;
     
         color: var(--text-color-grey);
-        padding-top: 10px;
+        margin-top: 10px;
 }
 
 * {
@@ -265,8 +265,8 @@ ul {
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    margin-top: 24px;
+    margin-bottom: 25px;
 
 }
 
@@ -277,11 +277,14 @@ a {
 .nav-menu {
     display: flex;
     gap: 46px;
-    margin-right: 371px;
+    
 }
+.menu{
+    margin-right: 371px;
+    }
+
 
 .main-container {
-    display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -330,21 +333,18 @@ a {
 
 .job-head {
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .job-container {
     display: flex;
     justify-content: center;
-    gap: 30px
 }
 
-.card-set h3 {
+.item-describe {
     padding-top: 30px;
-}
-
-.card-set p {
     padding-bottom: 30px;
+    
 }
 
 .card-set {
@@ -379,7 +379,7 @@ a {
 }
 
 .team-tittle {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .footer-container {
@@ -442,13 +442,13 @@ a {
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+    padding-top: 20px;
 }
 
 
 .project-list h3 {
-    padding-top: 20px;
-    gap: 4px;
     margin-left: 24px;
+    margin-bottom: 4px;
 }
 
 .project-list p {
@@ -464,4 +464,7 @@ a {
 .projects-section{
     padding-top: 50px;
     padding-bottom: 94px;
+}
+.project-img{
+    display: block;
 }
